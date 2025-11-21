@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio andrea</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../components/header.css" />
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+
+    <div class="home">
+        <div class="home-content">
+            <div class="left-home">
+                <div class="title-heavy">
+                    <h1>Hola, soy Andrea Pedreros</h1>
+                </div>
+                <div class="description">
+                    Full Stack Developer Desarrolladora de aplicaciones web con experiencia demostrada en la creación de
+                    soluciones robustas y escalables. Destreza en una variedad de lenguajes de programación, incluyendo
+                    JavaScript, C#, y Java, así como en el uso de frameworks como Angular y .Net.
+                    Especializado en el diseño e implementación de aplicaciones para el sector del comercio, gestión de
+                    inventarios y salud.
+                </div>
+
+                <div class="btn_contact">
+                    <span>Contáctame</button>
+                </div>
+
+                <div class="experience-square">
+                    <div class="square">
+                        <h1>3 Años</h1>
+                        <span>Experiencia</span>
+                    </div>
+                    <div class="square">
+                        <h1>10+</h1>
+                        <span>Proyectos trabajados</span>
+                    </div>
+                    <div class="square">
+                        <h1>2</h1>
+                        <span>Empresas trabajadas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rigth-home">
+                <div class="img-container">
+                    <img src="../assets/andrea.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    fetch("../components/header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+</script>
+
+</html>

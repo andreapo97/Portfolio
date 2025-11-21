@@ -1,0 +1,153 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(154, 25, 194, 0.08) 100%);
+    padding-top: 40px;
+
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin: auto;
+
+    width: 80%;
+    gap: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.contact-left {
+    width: 40%;
+}
+
+.contact-left h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contact-left p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.contact-info {
+    margin: 30px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon-box {
+    background: #f5e1ff;
+    color: #a020f0;
+    padding: 12px;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.info-item span {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-item p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.social-links a {
+    color: #a020f0;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #a020f0;
+    color: white;
+}
+
+/* FORMULARIO */
+.contact-right {
+    width: 50%;
+}
+
+.contact-right p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.double-input {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-submit {
+    background: #a020f0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #8800d4;
+}
+
+.response {
+    margin-top: 10px;
+    font-weight: bold;
+}

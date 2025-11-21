@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../components/header.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container">
+      <div class="about-container">
+        <div class="rigth">
+          <div class="img-container">
+            <img src="../assets/andrea.jpg" alt="" />
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <div class="section-presentation">
+            <h1>Soy Desarrolladora Full Stack Profesional</h1>
+
+            <p>
+              Diseño y desarrollo soluciones web modernas, escalables y
+              orientadas a las necesidades del usuario. Cuento con experiencia
+              trabajando en aplicaciones robustas para sectores como el
+              comercio, la gestión de inventarios y el área de la salud.
+            </p>
+
+            <p>
+              Tengo dominio en <strong>JavaScript, C#, Java</strong>, así como
+              en frameworks como <strong>Angular</strong> y
+              <strong>.NET</strong>, creando plataformas eficientes, seguras y
+              con una excelente experiencia de usuario.
+            </p>
+
+            <div class="buttons">
+              <a href="https://github.com/andreapo97" class="btn-primary">Mis Proyectos</button>
+              <a href="../assets/documento de prueba.pdf" download class="btn-secondary">
+                📄 Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    fetch("../components/header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+</html>

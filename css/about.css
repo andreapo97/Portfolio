@@ -1,0 +1,129 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(154, 25, 194, 0.08) 100%);
+    padding-top: 40px;
+
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 300px 50%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin: auto;
+
+    width: 80%;
+    gap: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.social-icons {
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #a020f0;
+    /* morado */
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* hover: aparece fondo morado y el icono se vuelve blanco */
+.social-icons a:hover {
+    background-color: #a020f0;
+    color: white;
+    transform: scale(1);
+}
+
+.section-presentation {
+    max-width: 700px;
+}
+
+.section-presentation h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.section-presentation p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background: #a020f0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #8b06d4;
+}
+
+.btn-secondary {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background: #f2f2f2;
+}
